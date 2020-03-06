@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire responsive</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pgq1lmh.css">
+  
+    <script src="https://kit.fontawesome.com/43d602b24b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="row main">
+        <div class="col-6 left">
+        
+        </div>
+        <div class="right col-6">
+    <h1>Join Unsplash</h1>
+    <p>Access <B>491,654</B> free, high-resolution photos you can't find anywhere else </p>
+
+    <?php
+    //     // if (isset($_POST['name'], $_POST['email'], $_POST['password'])) {
+    //     //   echo "Tu t'appelles";
+    //     //   echo $_POST['name'];
+    //     //   echo "Ton mail est";
+    //     //   echo $_POST['email'];
+    //     //   echo "Ton mdp est";
+    //     //   echo $_POST['password'];
+    //     // }
+    //     ?>
+    
+
+
+      <form action="insertion.php" method="POST">
+        <div>
+          <label for="name"><B>Name</B></label>
+        </div>
+        <div>
+          <input type="text" class="input-style" name="name" placeholder="John Doe">
+        </div>
+      
+        <div>
+          <label for="email"><B>Email Address</B></label>
+        </div>
+        <div>
+          <input type="email" class="input-style" name="email" required placeholder="john.doe@gmail.com">
+        </div>
+        <div>
+            <label for="password"><B>Password</B> </label>
+        </div>
+        <div>
+            <input type="password" class="input-style" name="password" required placeholder="• • • •">
+          </div>
+        <div>
+        <label class="container">Terms of Service
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+        </label>
+        </div>
+        <div>
+          <input type="submit" class="border" value="Sign Up">
+          <input type="submit" class="border1" value="I'm already member">
+        </div>
+      
+      </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color:#fed9a1;
+
+    width: 100%;
+    height: 100vh; /* viewport height */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 80%;
+    height: 700px;
+    background-color: white;
+}
+
+.left {
+    height: 100%;
+    background-image: url("img/photopie.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+font-family: sirba-web, serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.right {
+    padding: 100px;
+}
+
+form {
+background: white;
+margin-top: 50px;
+}
+  
+form div {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px
+}
+.input-group{
+top: 108px;
+position: absolute;
+width: 280px;
+transition: .5s
+  }
+.input-style{
+width: 100%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1px solid #999;
+outline: none;
+background: transparent;
+margin-top: -30px;
+  }
+
+.border{
+border-bottom: 1px solid #999;
+border-radius: 100px;
+width: 40%;
+height: 50px;
+background-color:#ff7968 ;
+color: white;
+/* font-family: benton-sans, sans-serif;
+font-weight: 500;
+font-style: normal; */
+margin-top: 25px;
+}
+
+.border1{
+width: 35%;
+padding: 10px 0;
+margin: 25px 0;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+border-bottom: 2px solid #ff7968;
+outline: none;
+background: transparent;
+margin-right: 90px;
+font-size: 13px;
+}
+
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 20px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: rgb(225, 228, 231);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+}
